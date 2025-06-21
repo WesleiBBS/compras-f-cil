@@ -86,8 +86,8 @@ function doBackgroundSync() {
 self.addEventListener('push', (event) => {
   const options = {
     body: event.data ? event.data.text() : 'Nova notificação do Smart Shopping',
-    icon: '/icon-192x192.png',
-    badge: '/icon-192x192.png',
+    icon: '/shop.png',
+    badge: '/shop.png',
     vibrate: [100, 50, 100],
     data: {
       dateOfArrival: Date.now(),
@@ -97,12 +97,12 @@ self.addEventListener('push', (event) => {
       {
         action: 'explore',
         title: 'Abrir App',
-        icon: '/icon-192x192.png'
+        icon: '/shop.png'
       },
       {
         action: 'close',
         title: 'Fechar',
-        icon: '/icon-192x192.png'
+        icon: '/shop.png'
       }
     ]
   };
