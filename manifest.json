@@ -2,23 +2,23 @@
   "name": "Smart Shopping - Lista de Compras Inteligente",
   "short_name": "Smart Shopping",
   "description": "Aplicativo inteligente para gerenciar listas de compras, comparar preços e acompanhar gastos",
-  "start_url": "/",
+  "start_url": "/compras-f-cil/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
   "orientation": "portrait-primary",
-  "scope": "/",
+  "scope": "/compras-f-cil/",
   "lang": "pt-BR",
   "categories": ["shopping", "productivity", "finance"],
   "icons": [
     {
-      "src": "/icon-192x192.png",
+      "src": "/compras-f-cil/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "/icon-512x512.png",
+      "src": "/compras-f-cil/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable any"
@@ -26,13 +26,13 @@
   ],
   "screenshots": [
     {
-      "src": "/screenshot-mobile.png",
+      "src": "/compras-f-cil/screenshot-mobile.png",
       "sizes": "375x667",
       "type": "image/png",
       "form_factor": "narrow"
     },
     {
-      "src": "/screenshot-desktop.png",
+      "src": "/compras-f-cil/screenshot-desktop.png",
       "sizes": "1280x720",
       "type": "image/png",
       "form_factor": "wide"
@@ -50,4 +50,3 @@
     "client_mode": "navigate-existing"
   }
 }
-
