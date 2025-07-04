@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Use - Smart Shopping</title>
+    <title>Terms and Conditions - Smart Shopping</title>
     <style>
         * {
             margin: 0;
@@ -16,137 +16,223 @@
             line-height: 1.6; 
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
-            padding: 20px;
+            padding: 10px;
         }
         
         .container { 
             max-width: 800px; 
             margin: 0 auto; 
             background: white;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            overflow-wrap: break-word;
         }
         
         .header {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             padding-bottom: 20px;
             border-bottom: 2px solid #f0f0f0;
         }
         
         h1 { 
             color: #764ba2; 
-            font-size: 2.5em;
+            font-size: 2.2em;
             margin-bottom: 10px;
             font-weight: 700;
         }
         
         .subtitle {
             color: #666;
-            font-size: 1.1em;
+            font-size: 1em;
         }
         
         h2 { 
             color: #333; 
-            margin-top: 30px;
-            margin-bottom: 15px;
-            font-size: 1.4em;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-size: 1.3em;
             font-weight: 600;
         }
         
         p {
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             color: #444;
             text-align: justify;
+            font-size: 0.95em;
         }
         
         ul { 
-            padding-left: 25px;
-            margin-bottom: 15px;
+            padding-left: 20px;
+            margin-bottom: 12px;
         }
         
         li {
-            margin-bottom: 8px;
+            margin-bottom: 6px;
             color: #444;
+            font-size: 0.95em;
         }
         
         .highlight-box {
             background: #e8f5e8;
             border-left: 4px solid #4CAF50;
-            padding: 20px;
-            margin: 25px 0;
+            padding: 15px;
+            margin: 20px 0;
             border-radius: 8px;
         }
         
         .warning-box {
             background: #fff3cd;
             border-left: 4px solid #ffc107;
-            padding: 20px;
-            margin: 25px 0;
+            padding: 15px;
+            margin: 20px 0;
             border-radius: 8px;
         }
 
         .info-box {
             background: #d1ecf1;
             border-left: 4px solid #17a2b8;
-            padding: 20px;
-            margin: 25px 0;
+            padding: 15px;
+            margin: 20px 0;
             border-radius: 8px;
         }
         
         .contact-box {
             background: #f8f9fa;
-            padding: 25px;
+            padding: 20px;
             border-radius: 12px;
-            margin: 30px 0;
+            margin: 25px 0;
             border: 1px solid #e9ecef;
         }
         
         .icon {
-            font-size: 1.2em;
-            margin-right: 8px;
+            font-size: 1.1em;
+            margin-right: 6px;
         }
         
         .footer {
             text-align: center;
-            margin-top: 40px;
+            margin-top: 30px;
             padding-top: 20px;
             border-top: 1px solid #e9ecef;
             color: #666;
             font-style: italic;
+            font-size: 0.9em;
         }
         
         .back-button {
             display: inline-block;
             background: #764ba2;
             color: white;
-            padding: 12px 24px;
+            padding: 10px 20px;
             text-decoration: none;
             border-radius: 8px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             font-weight: 500;
             transition: background 0.3s;
             border: none;
             cursor: pointer;
+            font-size: 0.9em;
         }
         
         .back-button:hover {
             background: #5a3a7a;
         }
         
+        a {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+        
+        a:hover {
+            color: #5a3a7a;
+        }
+        
+        /* Responsividade para Mobile */
         @media (max-width: 768px) {
+            body {
+                padding: 5px;
+            }
+            
             .container {
-                padding: 20px;
-                margin: 10px;
+                padding: 15px;
+                border-radius: 10px;
+                margin: 5px;
             }
             
             h1 {
-                font-size: 2em;
+                font-size: 1.8em;
+                line-height: 1.2;
             }
             
-            body {
+            h2 {
+                font-size: 1.1em;
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+            
+            p, li {
+                font-size: 0.9em;
+                line-height: 1.5;
+            }
+            
+            .highlight-box, .warning-box, .info-box, .contact-box {
+                padding: 12px;
+                margin: 15px 0;
+            }
+            
+            .header {
+                margin-bottom: 20px;
+                padding-bottom: 15px;
+            }
+            
+            .subtitle {
+                font-size: 0.9em;
+            }
+            
+            .back-button {
+                padding: 8px 16px;
+                font-size: 0.85em;
+                margin-bottom: 10px;
+            }
+            
+            ul {
+                padding-left: 15px;
+            }
+            
+            .icon {
+                font-size: 1em;
+                margin-right: 4px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 12px;
+                margin: 2px;
+            }
+            
+            h1 {
+                font-size: 1.6em;
+            }
+            
+            h2 {
+                font-size: 1em;
+            }
+            
+            p, li {
+                font-size: 0.85em;
+            }
+            
+            .highlight-box, .warning-box, .info-box, .contact-box {
                 padding: 10px;
+            }
+            
+            .back-button {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 10px;
             }
         }
     </style>
@@ -161,99 +247,69 @@
         </div>
         
         <div class="highlight-box">
-            <p><strong>🎯 These terms and conditions apply to the Smart Shopping application (hereinafter referred to as "Application") for mobile and web devices that was created as a Free service.</strong></p>
+            <p><strong>These terms and conditions apply to the Smart Shopping app (hereby referred to as "Application") for mobile devices that was created by Eslen Costa Goncalves (hereby referred to as "Service Provider") as a service that may include both free and paid features.</strong></p>
         </div>
         
         <h2><span class="icon">✅</span>Acceptance of Terms</h2>
-        <p>By downloading or using the Application, you automatically agree to the following terms. It is strongly recommended that you read and understand these terms carefully before using the Application.</p>
+        <p>By downloading or using the Application, you are automatically agreeing to the following terms. It is strongly recommended that you thoroughly read and understand these terms prior to using the Application.</p>
         
         <div class="warning-box">
-            <p><strong>⚠️ Important:</strong> Unauthorized copying, modification of the Application, any part of the Application, or our trademarks is strictly prohibited. Any attempts to extract the source code of the Application, translate the Application into other languages, or make derivative versions are not permitted. All trademarks, copyrights, database rights, and other intellectual property rights related to the Application remain the property of the Developer.</p>
+            <p><strong>⚠️ Intellectual Property:</strong> Unauthorized copying, modification of the Application, any part of the Application, or our trademarks is strictly prohibited. Any attempts to extract the source-code of the Application, translate the Application into other languages, or make derivative versions are not permitted. All trademarks, copyrights, database rights, and other intellectual property rights related to the Application remain the property of the Service Provider.</p>
         </div>
         
         <h2><span class="icon">🔧</span>Service Modifications</h2>
-        <p>The Developer is committed to ensuring that the Application is as beneficial and efficient as possible. As such, they reserve the right to make changes to the Application or to charge for their services, at any time and for any reason. The Developer assures you that any charges for the Application or its services will be clearly communicated to you.</p>
-        
-        <div class="info-box">
-            <p><strong>ℹ️ Currently:</strong> Smart Shopping is 100% free and there are no charging plans at the moment.</p>
-        </div>
+        <p>The Service Provider is committed to ensuring that the Application is as beneficial and efficient as possible. For that reason, they reserve the right to make changes to the Application or to charge for their services, at any time and for any reason. The Service Provider assures you that any charges for the Application or its services will be clearly communicated to you.</p>
         
         <h2><span class="icon">💾</span>Data and Security</h2>
-        <p>The Application stores and processes personal data that you have provided to the Developer in order to provide the Service. It is your responsibility to keep your phone and access to the Application secure.</p>
+        <p>The Application stores and processes personal data that you have provided to the Service Provider in order to provide the Service. It is your responsibility to keep your phone and access to the Application secure.</p>
         
         <div class="warning-box">
-            <p><strong>🔒 Device Security:</strong> The Developer strongly advises against jailbreaking or rooting your phone, which involves the removal of software restrictions and limitations imposed by the official operating system of your device. Such actions could expose your phone to malware, viruses, malicious programs, compromise the security features of your phone and could cause the Application to not work properly or at all.</p>
+            <p><strong>🔒 Device Security:</strong> The Service Provider strongly advises against jailbreaking or rooting your phone, which is the process of removing software restrictions and limitations imposed by the official operating system of your device. It could expose your phone to malware/viruses/malicious programs, compromise your phone's security features and it could mean that the Application won't work properly or at all.</p>
         </div>
         
-        <h2><span class="icon">🌐</span>Third-party Services</h2>
-        <p>Please note that the Application utilizes third-party services that have their own Terms and Conditions. Below are the links to the Terms and Conditions of the third-party service providers used by the Application:</p>
+        <h2><span class="icon">🌐</span>Third Party Services</h2>
+        <p>Please note that the Application utilizes third party services that have their own Terms and Conditions. Below are the links to Terms and Conditions of the third party service providers used by the Application:</p>
         <ul>
-            <li>Browser services (for PWA functionality)</li>
-            <li>Device operating system</li>
+            <li><a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener noreferrer">Google Play Services</a></li>
         </ul>
         
         <h2><span class="icon">📱</span>Connectivity and Responsibilities</h2>
-        <p>You should be aware that the Developer does not take responsibility for certain things. Some functions of the Application can work offline, but certain functionalities may require an active internet connection, which can be Wi-Fi, or provided by your mobile network provider. The Developer cannot take responsibility for the Application not working at full functionality if you don't have access to Wi-Fi, or if you have run out of your data allowance.</p>
+        <p>You should be aware that the Service Provider does not take responsibility for certain things. Certain functions of the Application will require the Application to have an active internet connection. The connection can be Wi-Fi, or provided by your mobile network provider, but the Service Provider cannot take responsibility for the Application not working at full functionality if you don't have access to Wi-Fi, and you don't have any of your data allowance left.</p>
         
         <div class="info-box">
-            <p><strong>📶 Mobile Data:</strong> If you're using the Application outside of an area with Wi-Fi, you should remember that the terms of the agreement with your mobile network provider will still apply. As a result, you may be charged by your mobile provider for the cost of data for the duration of the connection while accessing the Application, or other third-party charges. In using the Application, you're accepting responsibility for any such charges, including roaming data charges if you use the Application outside of your home territory (i.e. region or country) without turning off data roaming.</p>
+            <p><strong>📶 Mobile Data:</strong> If you're using the Application outside of an area with Wi-Fi, you should remember that your terms of the agreement with your mobile network provider will still apply. As a result, you may be charged by your mobile provider for the cost of data for the duration of the connection while accessing the Application, or other third party charges. In using the Application, you're accepting responsibility for any such charges, including roaming data charges if you use the Application outside of your home territory (i.e. region or country) without turning off data roaming.</p>
         </div>
         
-        <p>If you are not the bill payer for the device on which you're using the Application, please be aware that we assume that you have received permission from the bill payer for using the Application.</p>
+        <p>If you are not the bill payer for the device on which you're using the Application, please be aware that they assume that you have received permission from the bill payer for using the Application.</p>
         
-        <h2><span class="icon">⚡</span>Limitations of Liability</h2>
-        <p>Along the same lines, the Developer cannot always take responsibility for the way you use the Application i.e. You need to make sure that your device stays charged – if it runs out of battery and you can't turn it on to avail the Service, the Developer cannot accept responsibility for that.</p>
+        <h2><span class="icon">⚡</span>Liability Limitations</h2>
+        <p>Along the same lines, the Service Provider cannot always take responsibility for the way you use the Application i.e. You need to make sure that your device stays charged – if it runs out of battery and you can't turn it on to avail the Service, the Service Provider cannot accept responsibility.</p>
         
-        <p>With respect to the Developer's responsibility for your use of the Application, when you're using the Application, it's important to bear in mind that although we endeavor to ensure that it is updated and correct at all times, since all data is stored locally on your device, the accuracy and integrity of the data are your responsibility. The Developer does not accept liability for any loss, direct or indirect, you experience as a result of relying wholly on this functionality of the Application.</p>
+        <p>With respect to the Service Provider's responsibility for your use of the Application, when you're using the Application, it's important to bear in mind that although they endeavour to ensure that it is updated and correct at all times, they do rely on third parties to provide information to them so that they can make it available to you. The Service Provider accepts no liability for any loss, direct or indirect, you experience as a result of relying wholly on this functionality of the Application.</p>
         
         <h2><span class="icon">🔄</span>Updates and Continuity</h2>
-        <p>The Developer may wish to update the Application at some point. The Application is currently available on the requirements for the operating system (and for any additional systems they decide to extend the availability of the Application to) may change, and you'll need to download the updates if you want to keep using the Application.</p>
+        <p>The Service Provider may wish to update the Application at some point. The Application is currently available on according to the requirements for operating system (and for any additional systems they decide to extend the availability of the Application to) may change, and you'll need to download the updates if you want to keep using the Application.</p>
         
         <div class="warning-box">
-            <p><strong>⚠️ Updates:</strong> The Developer does not promise that it will always update the Application so that it is relevant to you and/or works with the version of the operating system that you have installed on your device. However, you promise to always accept updates to the Application when offered to you.</p>
+            <p><strong>⚠️ Updates:</strong> The Service Provider does not promise that it will always update the Application so that it is relevant to you and/or works with the version of the operating system that you have installed on your device. However, you promise to always accept updates to the Application when offered to you.</p>
         </div>
         
-        <p>The Developer may also wish to stop providing the Application, and may terminate use of it at any time without giving notice of termination to you. Unless they tell you otherwise, upon any termination:</p>
+        <p>The Service Provider may also wish to stop providing the Application, and may terminate use of it at any time without giving notice of termination to you. Unless they tell you otherwise, upon any termination:</p>
         <ul>
-            <li>(a) the rights and licenses granted to you in these terms will end</li>
-            <li>(b) you must stop using the Application, and (if needed) delete it from your device</li>
+            <li>(a) the rights and licenses granted to you in these terms will end;</li>
+            <li>(b) you must stop using the Application, and (if needed) delete it from your device.</li>
         </ul>
         
-        <h2><span class="icon">🛒</span>Proper Use of the Application</h2>
-        <p>By using Smart Shopping, you agree to:</p>
-        <ul>
-            <li>Use the application only to manage your own shopping lists</li>
-            <li>Not use the application for illegal or harmful activities</li>
-            <li>Maintain the accuracy of the information entered</li>
-            <li>Regularly backup your important data</li>
-            <li>Respect the intellectual property rights of the application</li>
-        </ul>
-        
-        <div class="highlight-box">
-            <h2><span class="icon">💚</span>100% Free Application</h2>
-            <p><strong>We certify that:</strong></p>
-            <ul>
-                <li>✅ No download or usage fees</li>
-                <li>✅ No advertisements or publicity</li>
-                <li>✅ No in-app purchases</li>
-                <li>✅ No limit on lists or products</li>
-                <li>✅ All features included</li>
-            </ul>
-        </div>
-        
-        <h2><span class="icon">🔄</span>Changes to these Terms and Conditions</h2>
-        <p>The Developer may update these Terms and Conditions from time to time. Thus, you are advised to review this page periodically for any changes. The Developer will notify you of any changes by posting the new Terms and Conditions on this page.</p>
+        <h2><span class="icon">🔄</span>Changes to These Terms and Conditions</h2>
+        <p>The Service Provider may update their Terms and Conditions from time to time. Thus, you are advised to review this page periodically for any changes. The Service Provider will notify you of any changes by posting the new Terms and Conditions on this page.</p>
         
         <div class="info-box">
-            <p><strong>These terms and conditions are effective as of July 4, 2025</strong></p>
+            <p><strong>These terms and conditions are effective as of 04/07/2025</strong></p>
         </div>
         
         <div class="contact-box">
             <h2><span class="icon">📧</span>Contact Us</h2>
-            <p>If you have any questions or suggestions about these Terms and Conditions, do not hesitate to contact the Developer at:</p>
-            <p><strong>Email:</strong> wesleicostabbs@hotmail.com</p>
-            <p><strong>Developer:</strong> AppsBBS</p>
-            <p><strong>Response:</strong> We respond within 48 business hours</p>
+            <p>If you have any questions or suggestions about the Terms and Conditions, do not hesitate to contact the Service Provider at <strong>wesleicostabbs@hotmail.com</strong>.</p>
         </div>
         
         <div class="footer">

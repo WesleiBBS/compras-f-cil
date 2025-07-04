@@ -16,137 +16,223 @@
             line-height: 1.6; 
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
-            padding: 20px;
+            padding: 10px;
         }
         
         .container { 
             max-width: 800px; 
             margin: 0 auto; 
             background: white;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            overflow-wrap: break-word;
         }
         
         .header {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             padding-bottom: 20px;
             border-bottom: 2px solid #f0f0f0;
         }
         
         h1 { 
             color: #764ba2; 
-            font-size: 2.5em;
+            font-size: 2.2em;
             margin-bottom: 10px;
             font-weight: 700;
         }
         
         .subtitle {
             color: #666;
-            font-size: 1.1em;
+            font-size: 1em;
         }
         
         h2 { 
             color: #333; 
-            margin-top: 30px;
-            margin-bottom: 15px;
-            font-size: 1.4em;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-size: 1.3em;
             font-weight: 600;
         }
         
         p {
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             color: #444;
             text-align: justify;
+            font-size: 0.95em;
         }
         
         ul { 
-            padding-left: 25px;
-            margin-bottom: 15px;
+            padding-left: 20px;
+            margin-bottom: 12px;
         }
         
         li {
-            margin-bottom: 8px;
+            margin-bottom: 6px;
             color: #444;
+            font-size: 0.95em;
         }
         
         .highlight-box {
             background: #e8f5e8;
             border-left: 4px solid #4CAF50;
-            padding: 20px;
-            margin: 25px 0;
+            padding: 15px;
+            margin: 20px 0;
             border-radius: 8px;
         }
         
         .warning-box {
             background: #fff3cd;
             border-left: 4px solid #ffc107;
-            padding: 20px;
-            margin: 25px 0;
+            padding: 15px;
+            margin: 20px 0;
             border-radius: 8px;
         }
 
         .info-box {
             background: #d1ecf1;
             border-left: 4px solid #17a2b8;
-            padding: 20px;
-            margin: 25px 0;
+            padding: 15px;
+            margin: 20px 0;
             border-radius: 8px;
         }
         
         .contact-box {
             background: #f8f9fa;
-            padding: 25px;
+            padding: 20px;
             border-radius: 12px;
-            margin: 30px 0;
+            margin: 25px 0;
             border: 1px solid #e9ecef;
         }
         
         .icon {
-            font-size: 1.2em;
-            margin-right: 8px;
+            font-size: 1.1em;
+            margin-right: 6px;
         }
         
         .footer {
             text-align: center;
-            margin-top: 40px;
+            margin-top: 30px;
             padding-top: 20px;
             border-top: 1px solid #e9ecef;
             color: #666;
             font-style: italic;
+            font-size: 0.9em;
         }
         
         .back-button {
             display: inline-block;
             background: #764ba2;
             color: white;
-            padding: 12px 24px;
+            padding: 10px 20px;
             text-decoration: none;
             border-radius: 8px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             font-weight: 500;
             transition: background 0.3s;
             border: none;
             cursor: pointer;
+            font-size: 0.9em;
         }
         
         .back-button:hover {
             background: #5a3a7a;
         }
         
+        a {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+        
+        a:hover {
+            color: #5a3a7a;
+        }
+        
+        /* Responsividade para Mobile */
         @media (max-width: 768px) {
+            body {
+                padding: 5px;
+            }
+            
             .container {
-                padding: 20px;
-                margin: 10px;
+                padding: 15px;
+                border-radius: 10px;
+                margin: 5px;
             }
             
             h1 {
-                font-size: 2em;
+                font-size: 1.8em;
+                line-height: 1.2;
             }
             
-            body {
+            h2 {
+                font-size: 1.1em;
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+            
+            p, li {
+                font-size: 0.9em;
+                line-height: 1.5;
+            }
+            
+            .highlight-box, .warning-box, .info-box, .contact-box {
+                padding: 12px;
+                margin: 15px 0;
+            }
+            
+            .header {
+                margin-bottom: 20px;
+                padding-bottom: 15px;
+            }
+            
+            .subtitle {
+                font-size: 0.9em;
+            }
+            
+            .back-button {
+                padding: 8px 16px;
+                font-size: 0.85em;
+                margin-bottom: 10px;
+            }
+            
+            ul {
+                padding-left: 15px;
+            }
+            
+            .icon {
+                font-size: 1em;
+                margin-right: 4px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 12px;
+                margin: 2px;
+            }
+            
+            h1 {
+                font-size: 1.6em;
+            }
+            
+            h2 {
+                font-size: 1em;
+            }
+            
+            p, li {
+                font-size: 0.85em;
+            }
+            
+            .highlight-box, .warning-box, .info-box, .contact-box {
                 padding: 10px;
+            }
+            
+            .back-button {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 10px;
             }
         }
     </style>
@@ -161,83 +247,60 @@
         </div>
         
         <div class="highlight-box">
-            <p><strong>🔒 Esta política de privacidade aplica-se à aplicação Smart Shopping (doravante designada por "Aplicação") para dispositivos móveis e web que foi criada como um serviço Gratuito. Este serviço destina-se ao uso "COMO ESTÁ".</strong></p>
+            <p><strong>Esta política de privacidade aplica-se à aplicação Smart Shopping (doravante designada por "Aplicação") para dispositivos móveis que foi criada por Eslen Costa Goncalves (doravante designada por "Prestador de Serviços") como um serviço Gratuito. Este serviço destina-se ao uso "COMO ESTÁ".</strong></p>
         </div>
         
         <h2><span class="icon">📋</span>Coleta e uso de informações</h2>
         <p>O Aplicativo coleta informações quando você o baixa e usa. Essas informações podem incluir informações como:</p>
         <ul>
-            <li><strong>Informações do dispositivo:</strong> O endereço de protocolo de Internet do seu dispositivo (por exemplo, endereço IP)</li>
-            <li><strong>Uso do aplicativo:</strong> As páginas do Aplicativo que você visita, a hora e a data da sua visita, o tempo gasto nessas páginas</li>
-            <li><strong>Tempo de uso:</strong> O tempo gasto no aplicativo</li>
-            <li><strong>Sistema operacional:</strong> O sistema operacional que você usa em seu dispositivo móvel</li>
-            <li><strong>Dados funcionais:</strong> Listas de compras, produtos cadastrados, histórico de compras e configurações pessoais</li>
+            <li>O endereço de protocolo de Internet do seu dispositivo (por exemplo, endereço IP)</li>
+            <li>As páginas do Aplicativo que você visita, a hora e a data da sua visita, o tempo gasto nessas páginas</li>
+            <li>O tempo gasto no aplicativo</li>
+            <li>O sistema operacional que você usa em seu dispositivo móvel</li>
         </ul>
         
         <div class="info-box">
-            <p><strong>ℹ️ O Aplicativo não coleta informações precisas sobre a localização do seu dispositivo móvel.</strong></p>
+            <p><strong>O Aplicativo não coleta informações precisas sobre a localização do seu dispositivo móvel.</strong></p>
         </div>
 
-        <p>Para uma melhor experiência, ao usar o Aplicativo, podem ser solicitadas certas informações de identificação pessoal, incluindo, mas não se limitando a configurações de moeda e preferências de uso. As informações solicitadas serão retidas localmente no seu dispositivo e usadas conforme descrito nesta política de privacidade.</p>
+        <p>O Provedor de Serviços pode usar as informações fornecidas para entrar em contato com você de tempos em tempos para fornecer informações importantes, avisos necessários e promoções de marketing.</p>
         
-        <h2><span class="icon">💾</span>Armazenamento de Dados</h2>
-        <div class="highlight-box">
-            <p><strong>Armazenamento 100% Local:</strong></p>
-            <ul>
-                <li>Todos os dados ficam armazenados apenas no seu dispositivo</li>
-                <li>Utilizamos IndexedDB (banco de dados do navegador)</li>
-                <li>Nenhuma informação é enviada para servidores externos</li>
-                <li>Não temos acesso aos seus dados pessoais</li>
-            </ul>
-        </div>
+        <p>Para uma melhor experiência, ao usar o Aplicativo, o Provedor de Serviços pode exigir que você nos forneça certas informações de identificação pessoal, incluindo, mas não se limitando ao ID usuário. As informações solicitadas pelo Provedor de Serviços serão retidas por ele e usadas conforme descrito nesta política de privacidade.</p>
         
         <h2><span class="icon">🌐</span>Acesso de terceiros</h2>
-        <p>O Smart Shopping <strong>não transmite</strong> dados pessoais para serviços externos. Todos os dados permanecem no seu dispositivo.</p>
+        <p>Apenas dados agregados e anônimos são transmitidos periodicamente a serviços externos para ajudar o Provedor de Serviços a melhorar o Aplicativo e seu serviço. O Provedor de Serviços pode compartilhar suas informações com terceiros nas formas descritas nesta declaração de privacidade.</p>
         
-        <div class="warning-box">
-            <p><strong>⚠️ Observação importante:</strong> O Aplicativo pode utilizar serviços de terceiros que possuem sua própria Política de Privacidade sobre o tratamento de dados, como:</p>
-            <ul>
-                <li>Serviços do navegador (para funcionamento PWA)</li>
-                <li>Sistema operacional do dispositivo</li>
-            </ul>
-        </div>
-
-        <p>O Desenvolvedor pode divulgar informações apenas:</p>
+        <p>Observe que o Aplicativo utiliza serviços de terceiros que possuem sua própria Política de Privacidade sobre o tratamento de dados. Abaixo estão os links para a Política de Privacidade dos provedores de serviços terceirizados usados pelo Aplicativo:</p>
+        
         <ul>
-            <li>Conforme exigido por lei, como para cumprir uma intimação ou processo legal semelhante</li>
-            <li>Quando acreditarem de boa-fé que a divulgação é necessária para proteger seus direitos, proteger sua segurança ou a segurança de outras pessoas, investigar fraudes ou responder a uma solicitação do governo</li>
+            <li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">Serviços do Google Play</a></li>
+        </ul>
+
+        <p>O Provedor de Serviços pode divulgar Informações Fornecidas pelo Usuário e Coletadas Automaticamente:</p>
+        <ul>
+            <li>conforme exigido por lei, como para cumprir uma intimação ou processo legal semelhante;</li>
+            <li>quando acreditarem de boa-fé que a divulgação é necessária para proteger seus direitos, proteger sua segurança ou a segurança de outras pessoas, investigar fraudes ou responder a uma solicitação do governo;</li>
+            <li>com seus provedores de serviços confiáveis que trabalham em seu nome, não têm um uso independente das informações que divulgamos a eles e concordaram em aderir às regras estabelecidas nesta declaração de privacidade.</li>
         </ul>
         
         <h2><span class="icon">🚫</span>Direitos de Recusa</h2>
-        <p>Você pode interromper toda a coleta de informações pelo Aplicativo facilmente:</p>
-        <ul>
-            <li><strong>Aplicativo Web:</strong> Limpando os dados do navegador ou deixando de usar o aplicativo</li>
-            <li><strong>PWA Instalado:</strong> Desinstalando através do navegador ou sistema operacional</li>
-            <li><strong>Dados locais:</strong> Usando a função "Limpar Todos os Dados" nas configurações</li>
-        </ul>
+        <p>Você pode interromper toda a coleta de informações pelo Aplicativo facilmente desinstalando-o. Você pode usar os processos de desinstalação padrão que podem estar disponíveis como parte de seu dispositivo móvel ou por meio do mercado ou rede de aplicativos móveis.</p>
         
         <h2><span class="icon">📅</span>Política de retenção de dados</h2>
-        <p>Como todos os dados ficam armazenados localmente no seu dispositivo, você tem controle total sobre a retenção:</p>
-        <ul>
-            <li>Os dados permanecem enquanto você usar o Aplicativo</li>
-            <li>Você pode excluir todos os dados a qualquer momento nas configurações</li>
-            <li>Não retemos dados em servidores externos</li>
-        </ul>
-        
-        <p>Se você tiver dúvidas sobre os dados, entre em contato em <strong>wesleicostabbs@hotmail.com</strong> e responderemos em um prazo razoável.</p>
+        <p>O Provedor de Serviços reterá os dados fornecidos pelo usuário enquanto você usar o Aplicativo e por um tempo razoável depois disso. Se você quiser que eles excluam os Dados Fornecidos pelo Usuário que você forneceu por meio do Aplicativo, entre em contato com eles em <strong>wesleicostabbs@hotmail.com</strong> e eles responderão em um prazo razoável.</p>
         
         <h2><span class="icon">👶</span>Crianças</h2>
-        <p>O Desenvolvedor não usa o Aplicativo para solicitar dados ou comercializar intencionalmente para crianças menores de 13 anos.</p>
+        <p>O Provedor de Serviços não usa o Aplicativo para solicitar dados ou comercializar intencionalmente para crianças menores de 13 anos.</p>
         
         <div class="warning-box">
-            <p><strong>⚠️ Política para Menores:</strong> O Aplicativo não se dirige a menores de 13 anos. O Desenvolvedor não coleta intencionalmente informações pessoais identificáveis de crianças menores de 13 anos. No caso do Desenvolvedor descobrir que uma criança menor de 13 anos forneceu informações pessoais, o Desenvolvedor imediatamente excluirá isso dos dados locais. Se você é pai ou responsável e está ciente de que seu filho nos forneceu informações pessoais, entre em contato em <strong>wesleicostabbs@hotmail.com</strong> para que possamos tomar as medidas necessárias.</p>
+            <p><strong>O Aplicativo não se dirige a menores de 13 anos.</strong> O Provedor de Serviços não coleta intencionalmente informações pessoais identificáveis de crianças menores de 13 anos de idade. No caso do Provedor de Serviços descobrir que uma criança menor de 13 anos forneceu informações pessoais, o Provedor de Serviços imediatamente excluirá isso de seus servidores. Se você é pai ou responsável e está ciente de que seu filho nos forneceu informações pessoais, entre em contato com o Provedor de Serviços (<strong>wesleicostabbs@hotmail.com</strong>) para que eles sejam capazes de tomar as medidas necessárias.</p>
         </div>
         
         <h2><span class="icon">🔐</span>Segurança</h2>
-        <p>O Desenvolvedor está preocupado em proteger a confidencialidade de suas informações. Como todos os dados ficam armazenados localmente no seu dispositivo, a segurança depende das medidas de proteção do seu próprio dispositivo e navegador. Recomendamos manter seu dispositivo atualizado e protegido.</p>
+        <p>O Provedor de Serviços está preocupado em proteger a confidencialidade de suas informações. O Provedor de Serviços fornece proteções físicas, eletrônicas e processuais para proteger as informações que o Provedor de Serviços processa e mantém.</p>
         
         <h2><span class="icon">🔄</span>Alterações</h2>
-        <p>Esta Política de Privacidade pode ser atualizada periodicamente por qualquer motivo. O Desenvolvedor notificará você sobre quaisquer alterações na Política de Privacidade, atualizando esta página com a nova Política de Privacidade. Aconselhamos que você consulte esta Política de Privacidade regularmente para quaisquer alterações, pois o uso continuado é considerado aprovação de todas as alterações.</p>
+        <p>Esta Política de Privacidade pode ser atualizada periodicamente por qualquer motivo. O Provedor de Serviços notificará você sobre quaisquer alterações na Política de Privacidade, atualizando esta página com a nova Política de Privacidade. Aconselhamos que você consulte esta Política de Privacidade regularmente para quaisquer alterações, pois o uso continuado é considerado aprovação de todas as alterações.</p>
         
         <div class="info-box">
             <p><strong>Esta política de privacidade entra em vigor a partir de 04/07/2025</strong></p>
@@ -248,27 +311,12 @@
         
         <div class="contact-box">
             <h2><span class="icon">📧</span>Contate-nos</h2>
-            <p>Se você tiver alguma dúvida sobre privacidade ao usar o Aplicativo ou tiver dúvidas sobre as práticas, entre em contato com o Desenvolvedor por e-mail em:</p>
-            <p><strong>Email:</strong> wesleicostabbs@hotmail.com</p>
-            <p><strong>Desenvolvedor:</strong> AppsBBS</p>
-            <p><strong>Resposta:</strong> Respondemos em até 48 horas úteis</p>
-        </div>
-        
-        <div class="highlight-box">
-            <h2><span class="icon">🛡️</span>Certificação de Privacidade</h2>
-            <p><strong>Certificamos que:</strong></p>
-            <ul>
-                <li>✅ Todos os dados permanecem no seu dispositivo</li>
-                <li>✅ Não coletamos informações pessoais identificáveis</li>
-                <li>✅ Não fazemos rastreamento ou análise externa</li>
-                <li>✅ Você tem controle total sobre seus dados</li>
-                <li>✅ Não compartilhamos dados com terceiros</li>
-            </ul>
+            <p>Se você tiver alguma dúvida sobre privacidade ao usar o Aplicativo ou tiver dúvidas sobre as práticas, entre em contato com o Provedor de Serviços por e-mail em <strong>wesleicostabbs@hotmail.com</strong>.</p>
         </div>
         
         <div class="footer">
             <p><strong>Última atualização:</strong> 04 de Julho de 2025</p>
-            <p>Smart Shopping v1.0.0 - Desenvolvido com ❤️ para sua privacidade e organização</p>
+            <p>Smart Shopping v1.0.0 - Desenvolvido com ❤️ para sua privacidade</p>
         </div>
     </div>
 </body>
