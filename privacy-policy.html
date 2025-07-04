@@ -5,81 +5,250 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Política de Privacidade - Smart Shopping</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body { 
-            font-family: Arial, sans-serif; 
-            margin: 20px; 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
             line-height: 1.6; 
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
+            padding: 20px;
         }
+        
         .container { 
             max-width: 800px; 
             margin: 0 auto; 
             background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
         }
-        h1, h2 { color: #333; }
-        h1 { color: #764ba2; text-align: center; }
-        ul { padding-left: 20px; }
-        .contact { background: #f8f9fa; padding: 15px; border-radius: 8px; margin-top: 20px; }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        h1 { 
+            color: #764ba2; 
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+        }
+        
+        h2 { 
+            color: #333; 
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            font-weight: 600;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            color: #444;
+            text-align: justify;
+        }
+        
+        ul { 
+            padding-left: 25px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            color: #444;
+        }
+        
+        .highlight-box {
+            background: #e8f5e8;
+            border-left: 4px solid #4CAF50;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+        
+        .warning-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+        
+        .contact-box {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px 0;
+            border: 1px solid #e9ecef;
+        }
+        
+        .icon {
+            font-size: 1.2em;
+            margin-right: 8px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e9ecef;
+            color: #666;
+            font-style: italic;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: #764ba2;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-weight: 500;
+            transition: background 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .back-button:hover {
+            background: #5a3a7a;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                margin: 10px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            body {
+                padding: 10px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🛒 Política de Privacidade - Smart Shopping</h1>
+        <button onclick="window.close()" class="back-button">← Voltar ao App</button>
         
-        <h2>1. Informações Coletadas</h2>
-        <p>O Smart Shopping coleta apenas informações necessárias para o funcionamento do aplicativo:</p>
-        <ul>
-            <li>Listas de compras criadas pelo usuário</li>
-            <li>Produtos adicionados às listas</li>
-            <li>Histórico de compras (armazenado localmente)</li>
-            <li>Preferências de configuração do usuário</li>
-        </ul>
-        
-        <h2>2. Armazenamento de Dados</h2>
-        <p>Todos os dados são armazenados localmente no dispositivo do usuário através do IndexedDB. <strong>Não enviamos nenhuma informação para servidores externos.</strong></p>
-        
-        <h2>3. Uso dos Dados</h2>
-        <p>Os dados são utilizados exclusivamente para:</p>
-        <ul>
-            <li>Exibir suas listas de compras personalizadas</li>
-            <li>Manter histórico de compras anteriores</li>
-            <li>Melhorar a experiência do usuário com sugestões</li>
-            <li>Funcionalidade offline do aplicativo</li>
-        </ul>
-        
-        <h2>4. Compartilhamento</h2>
-        <p><strong>Não compartilhamos, vendemos ou transferimos seus dados pessoais para terceiros.</strong> Seus dados permanecem sempre no seu dispositivo.</p>
-        
-        <h2>5. Segurança</h2>
-        <p>Implementamos medidas de segurança para proteger suas informações:</p>
-        <ul>
-            <li>Armazenamento local criptografado</li>
-            <li>Aplicativo funciona offline</li>
-            <li>Sem coleta de dados pessoais identificáveis</li>
-        </ul>
-        
-        <h2>6. Direitos do Usuário</h2>
-        <p>Você pode a qualquer momento:</p>
-        <ul>
-            <li>Excluir todos os dados do aplicativo</li>
-            <li>Exportar suas listas de compras</li>
-            <li>Desinstalar o aplicativo sem consequências</li>
-        </ul>
-        
-        <div class="contact">
-            <h2>7. Contato</h2>
-            <p>Para dúvidas sobre esta política de privacidade, entre em contato:</p>
-            <p><strong>Email:</strong> contato@smartshopping.com</p>
-            <p><strong>Desenvolvedor:</strong> Smart Shopping Team</p>
+        <div class="header">
+            <h1>🛡️ Política de Privacidade</h1>
+            <p class="subtitle">Smart Shopping - Lista de Compras Inteligente</p>
         </div>
         
-        <p style="text-align: center; margin-top: 30px; color: #666;">
-            <em>Última atualização: Janeiro 2025</em>
-        </p>
+        <div class="highlight-box">
+            <p><strong>🔒 Resumo:</strong> Seus dados ficam 100% no seu dispositivo. Não coletamos, não enviamos e não compartilhamos nenhuma informação pessoal.</p>
+        </div>
+        
+        <h2><span class="icon">📋</span>1. Informações que Coletamos</h2>
+        <p>O Smart Shopping coleta apenas as informações necessárias para o funcionamento local do aplicativo:</p>
+        <ul>
+            <li><strong>Listas de compras:</strong> Criadas e gerenciadas por você</li>
+            <li><strong>Produtos cadastrados:</strong> Nome, preço, categoria e observações</li>
+            <li><strong>Histórico de compras:</strong> Datas e valores das suas compras anteriores</li>
+            <li><strong>Configurações do app:</strong> Preferências de moeda e outras personalizações</li>
+        </ul>
+        
+        <h2><span class="icon">💾</span>2. Como Armazenamos Seus Dados</h2>
+        <div class="highlight-box">
+            <p><strong>Armazenamento 100% Local:</strong></p>
+            <ul>
+                <li>Todos os dados ficam armazenados apenas no seu dispositivo</li>
+                <li>Utilizamos IndexedDB (banco de dados do navegador)</li>
+                <li>Nenhuma informação é enviada para servidores externos</li>
+                <li>Não temos acesso aos seus dados</li>
+            </ul>
+        </div>
+        
+        <h2><span class="icon">🎯</span>3. Como Utilizamos Seus Dados</h2>
+        <p>Seus dados são utilizados exclusivamente para:</p>
+        <ul>
+            <li>Exibir suas listas de compras personalizadas</li>
+            <li>Manter histórico das suas compras anteriores</li>
+            <li>Fornecer sugestões baseadas no seu histórico</li>
+            <li>Permitir backup e restauração dos seus dados</li>
+            <li>Melhorar sua experiência de uso do aplicativo</li>
+        </ul>
+        
+        <h2><span class="icon">🚫</span>4. O que NÃO Fazemos</h2>
+        <div class="warning-box">
+            <p><strong>Garantias de Privacidade:</strong></p>
+            <ul>
+                <li>❌ Não coletamos dados pessoais identificáveis</li>
+                <li>❌ Não enviamos dados para servidores externos</li>
+                <li>❌ Não compartilhamos informações com terceiros</li>
+                <li>❌ Não vendemos seus dados</li>
+                <li>❌ Não utilizamos cookies de rastreamento</li>
+                <li>❌ Não fazemos análise de comportamento</li>
+            </ul>
+        </div>
+        
+        <h2><span class="icon">🔐</span>5. Segurança dos Dados</h2>
+        <p>Implementamos as seguintes medidas de segurança:</p>
+        <ul>
+            <li><strong>Armazenamento local criptografado</strong> pelo próprio navegador</li>
+            <li><strong>Conexão HTTPS</strong> para acessar o aplicativo</li>
+            <li><strong>Sem transmissão de dados</strong> para servidores externos</li>
+            <li><strong>Controle total do usuário</strong> sobre seus dados</li>
+        </ul>
+        
+        <h2><span class="icon">👤</span>6. Seus Direitos</h2>
+        <p>Como usuário do Smart Shopping, você tem total controle sobre seus dados:</p>
+        <ul>
+            <li><strong>Acesso:</strong> Visualize todos os seus dados a qualquer momento</li>
+            <li><strong>Exportação:</strong> Faça backup completo dos seus dados</li>
+            <li><strong>Exclusão:</strong> Apague todos os dados quando quiser</li>
+            <li><strong>Portabilidade:</strong> Exporte e importe dados entre dispositivos</li>
+        </ul>
+        
+        <h2><span class="icon">📱</span>7. Tecnologias Utilizadas</h2>
+        <p>O Smart Shopping utiliza as seguintes tecnologias para garantir sua privacidade:</p>
+        <ul>
+            <li><strong>Progressive Web App (PWA):</strong> Funciona offline</li>
+            <li><strong>IndexedDB:</strong> Banco de dados local do navegador</li>
+            <li><strong>Local Storage:</strong> Armazenamento local para configurações</li>
+            <li><strong>Service Worker:</strong> Cache local para funcionamento offline</li>
+        </ul>
+        
+        <div class="contact-box">
+            <h2><span class="icon">📧</span>Contato</h2>
+            <p>Para dúvidas sobre privacidade:</p>
+            <p><strong>Email:</strong> privacidade@smartshopping.com</p>
+            <p><strong>Desenvolvedor:</strong> Smart Shopping Team</p>
+            <p><strong>Resposta:</strong> Respondemos em até 48 horas</p>
+        </div>
+        
+        <div class="highlight-box">
+            <h2><span class="icon">✅</span>Certificação de Privacidade</h2>
+            <p><strong>Certificamos que:</strong></p>
+            <ul>
+                <li>✅ Todos os dados permanecem no seu dispositivo</li>
+                <li>✅ Não coletamos informações pessoais</li>
+                <li>✅ Não fazemos rastreamento ou análise</li>
+                <li>✅ Você tem controle total sobre seus dados</li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            <p><strong>Última atualização:</strong> Janeiro de 2025</p>
+            <p>Smart Shopping v1.0.0 - Desenvolvido com ❤️ para sua privacidade</p>
+        </div>
     </div>
 </body>
 </html>
