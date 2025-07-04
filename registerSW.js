@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/compras-f-cil/sw.js', { scope: '/compras-f-cil/' })})}
