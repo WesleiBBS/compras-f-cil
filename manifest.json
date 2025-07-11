@@ -1,6 +1,7 @@
 {
   "name": "Smart Shopping - Lista de Compras Inteligente",
   "short_name": "Smart Shopping",
+  "version": "2.0.0",
   "description": "Aplicativo inteligente para gerenciar listas de compras, comparar preços e acompanhar gastos",
   "start_url": "/compras-f-cil/",
   "display": "standalone",
