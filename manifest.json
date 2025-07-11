@@ -12,13 +12,13 @@
   "categories": ["shopping", "productivity", "finance"],
   "icons": [
     {
-      "src": "/compras-f-cil/shop.png",
+      "src": "/compras-f-cil/pwa-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "/compras-f-cil/shop.png",
+      "src": "/compras-f-cil/pwa-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable any"
